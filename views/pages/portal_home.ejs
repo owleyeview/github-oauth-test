@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+    <header>
+    <%- include('../partials/header'); %>
+    </header>
+
+    <main>
+    <div class="jumbotron">
+        <h1>Hello <%= userData.login %>!</h1>
+        <img src=<%= userData.avatar_url %>>
+        <p>
+            <strong>Name</strong>: <%= userData.name %><br>
+            <strong>Username</strong>: <%= userData.login %><br>
+            <strong>Company</strong>: <%= userData.company %><br>
+
+            <strong>Number of Public Repos</strong>: <%= userData.public_repos %><br>
+            <strong>Repos</strong>: <a href=<%= userData.repos_url %> > <%= userData.repos_url %></a><br>
+            <%- console.log(userData) %>
+        </p>
+    </div>
+</div>
+</body>
+</html> 
+    </div>
+    </main>
+
+    <footer>
+    <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+    <header>
+    <%- include('../partials/header'); %>
+    </header>
+
+    <main>
+    <div class="jumbotron">
+        <h1>Sorry you haven't logged in. </h1>
+        <p>Please log in here.</p>
+        <a href="https://github.com/login/oauth/authorize?client_id=<%= client_id %>" class="btn btn-danger"><span class="fa fa-github"></span> Github Login</a>
+        
+    </div>
+    <p><%= error %></p>
+    </main>
+
+    <footer>
+    <%- include('../partials/footer'); %>
+    
+    </footer>
+
+</body>
+</html>
